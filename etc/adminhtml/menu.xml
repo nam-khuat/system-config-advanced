@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="South_SystemConfigAdvanced::all" title="South Extension" module="South_SystemConfigAdvanced" sortOrder="68" resource="South_SystemConfigAdvanced::all"/>
+        <add id="South_SystemConfigAdvanced::system_demo" title="System Demo" module="South_SystemConfigAdvanced" sortOrder="86" parent="South_SystemConfigAdvanced::all" action="adminhtml/system_config/edit/section/south_extension_setting" resource="South_SystemConfigAdvanced::system_demo"/>
+    </menu>
+</config>

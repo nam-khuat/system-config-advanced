@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="south_extension" sortOrder="999" translate="label">
+			<label>South Extension</label>
+		</tab>
+		<section id="south_extension_setting" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>South Extension Setting</label>
+			<tab>south_extension</tab>
+			<resource>South_SystemConfigAdvanced::config_south_systemconfigadvanced</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>General</label>
+				<field id="demo_field" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Demo Field</label>
+					<frontend_model>South\SystemConfigAdvanced\Block\Adminhtml\System\Config\Demo</frontend_model>
+					<backend_model>South\SystemConfigAdvanced\Model\Config\Backend\Demo</backend_model>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

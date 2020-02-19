@@ -1,0 +1,18 @@
+<?php
+
+/** @var \South\SystemConfigAdvanced\Block\Demo $block */
+
+?>
+
+<table>
+    <tr>
+        <th><?= __('Name')?></th>
+        <th><?= __('Qty')?></th>
+    </tr>
+    <?php foreach ($block->getDemoField() as $demo): ?>
+    <tr>
+        <td><?= $block->escapeHtml($demo['name']) ?></td>
+        <td><?= $demo['qty']?></td>
+    </tr>
+    <?php endforeach;?>
+</table>
